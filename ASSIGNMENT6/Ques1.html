@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline+Internal+External css</title>
+    <link rel="stylesheet" href="Style.css" />
+    <style>
+      .Internal p {
+        color: red;
+      }
+      .Universal {
+        color: green;
+      }
+      .INLINE_INTERNAL {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Inline css
+      <p style="color: brown">Welcome to delhi</p>
+    </div>
+    <div class="Internal">
+      Internal css
+      <p>Welcome to Delhi NCR</p>
+    </div>
+    <div class="External">
+      External css
+      <p>This is the External css</p>
+    </div>
+    <!--Here we apply all three Inline+Internal+External but inline will applied-->
+    <!-- INLINE > INTERNAL > EXTERNAL -->
+    <div class="Universal">
+      <p style="color: rgb(107, 128, 0)">
+        IN this we applyed all INLINE+INTERNAL+EXTERNAL
+      </p>
+    </div>
+    <div class="INLINE_INTERNAL">
+      <p style="color: magenta">
+        This is the example of INline +Internal but INline will be applied.
+      </p>
+    </div>
+    <div class="Inline_External">
+      <p style="font-size: 30px; color: rgb(0, 255, 255)">
+        In this "class" we applied inline and exteral css but inline will we
+        applied
+      </p>
+    </div>
+  </body>
+</html>
