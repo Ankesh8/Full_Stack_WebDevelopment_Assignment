@@ -1,0 +1,34 @@
+.BOX {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  border: 1px solid lightgreen;
+  text-align: center;
+}
+ .BOXA{
+ position: relative;
+ left: 200px;
+ top: 200px;
+}
+.BOXB{
+  position: absolute;
+  left: -30px;
+  bottom: 30px;
+}
+.BOXC{
+  position: absolute;
+  right: -30px;
+  bottom: 30px;
+}
+.BOXD{
+  position: absolute;
+  left: -30px;
+  top: 30px;
+}
+.BOXE{
+  position: absolute;
+  right: -30px;
+  top: 30px;
+}
+
+
