@@ -11,8 +11,7 @@
   border: 1px solid blue;
   background-color: white;
   border-radius: 5px; 
-  row-gap: 5px;
 }
 child1{
-
+ gap: 5px;
 }
