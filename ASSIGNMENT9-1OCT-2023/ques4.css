@@ -1,17 +1,69 @@
-.container{
-  height: 427px;
-  width: 962px;
+.container {
+ /* height: fit-content;
+  width: 900px;
   border: 1px solid black;
   background-color: #ccc;
   display: flex;
+  gap: 32px;
+  top: 25px;
+  left: -8px;
+  padding: 32px 48px 32px 48px;
+  display: flex;
+  justify-content: center;*/
+  min-height: 100vh;
+  padding-top:100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #F4F2FD;
+  border: 1px solid black;
 }
-.child{
-  height:363px;
-  width: 262px;
-  border: 1px solid blue;
-  background-color: white;
-  border-radius: 5px; 
+.child {
+  height: 320px;
+  width:220px ;
+  border-radius: 5px;
+  padding: 35px;
+  gap: 32px;
 }
-child1{
- gap: 5px;
+.child1 {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(2, 7, 25);
+}
+.child2 {
+  background-color: rgb(3, 13, 42);
+  color: white;
+}
+.child3 {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(2, 7, 25);
+}
+.btn-subs1 {
+  width: 156px;
+  height: 38px;
+  border-radius: 50px;
+  padding: 8px, 24px, 8px, 24px;
+  background-color: rgba(32, 40, 66, 1);
+  gap: 10px;
+  color: white;
+}
+.btn-subs2 {
+  width: 156px;
+  height: 38px;
+  border-radius: 50px;
+  padding: 8px, 24px, 8px, 24px;
+  background-color: rgba(255, 255, 255, 1);
+  gap: 10px;
+  color: rgba(32, 40, 66, 1);
+}
+.plan_name{
+ font-size: 36px;
+ line-height: 0;
+}
+.price{
+  font-size: 36px;
+  font-weight: 100;
+  margin: 12px ;
+}
+.plan_for{
+  line-height: 0;
 }
