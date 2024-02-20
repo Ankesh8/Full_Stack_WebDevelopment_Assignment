@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      border: 1px solid black;
+    }
+    .box{
+      padding: 5px;
+      background-color: bisque;
+      border: 1px solid black;
+    }
+    .model{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      border: 1px solid black;
+      justify-items: center;
+    }
+    .sub{
+      padding: 5px;
+      
+      background-color: bisque;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">box 1</div>
+    <div class="box box2">box 2</div>
+    <div class="box box3">box 3</div>
+    <div class="box box4">box 4</div>
+    <div class="box box5">box 5</div>
+    <div class="box box5">box 6</div>
+  </div>
+
+  <h3>Example for justify item</h3>
+  <div class="model">
+    <div class="sub model1">model1</div>
+    <div class="sub model1">model2</div>
+    <div class="sub model1">model3</div>
+    <div class="sub model1">model4</div>
+    <div class="sub model1">model5</div>
+    <div class="sub model1">model6</div>
+  </div>
+  <p>justify self is used to control the individual item within the grid</p>
+</body>
+</html>
