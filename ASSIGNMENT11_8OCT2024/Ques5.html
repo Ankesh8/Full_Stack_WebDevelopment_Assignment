@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: grid;
+      background-color: #f5f5f5;
+      padding: 20px;
+      height: 100vh;
+      grid-template-areas:
+      "box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box4"
+      "box1 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box4"
+      "box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box4"
+      "box1 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box4"
+      ;
+    }
+    .box{
+      text-align: center;
+      color: white;
+      padding:20px;
+    }
+    .box1{
+      grid-area: box1;
+      background-color: #333;
+    }
+    .box2{
+      grid-area: box2;
+      background-color: rgb(45, 68, 11);
+    }
+    .box3{
+      grid-area: box3;
+      background-color: #df6b41; ;
+    }
+    .box4{
+      grid-area: box4;
+      background-color: #333;
+    }
+    @media(max-width:768px) {
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      .box2,
+      .box3{
+       flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+  </div>
+</body>
+</html>
